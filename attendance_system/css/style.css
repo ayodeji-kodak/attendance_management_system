@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+:root {
+    --font-family: "Roboto", sans-serf;
+    --normal-font: 400;
+    --bold-font: 700;
+    --bolder-font: 900;
+    --medium-font-size: 1em;
+    --big-font-size: 2.5em;
+    --bott0m-margin:10px;
+
+  }
+  
+  /* Variables end */
+
+  
+  html {
+      scroll-behavior: smooth;
+    }
+    
+    /* CSS Resets */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    ul {
+      list-style-type: none;
+    }
+    
+    a {
+      text-decoration: none;
+      color: var(--primary-color);
+    }
+    
+    a:hover {
+      color: var(--secondary-color);
+    }
+    
+    body {
+      font-family: var(--font-family);
+      font-size: 16px;
+    }
+    
+    .container{
+      width: 1200px;
+      max-width: 100%;
+      min-height: 400px;
+      margin: 0 auto;
+
+    }
+    nav {
+      position: sticky;
+      top: 0;
+      left: 0;
+      z-index: 1;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1rem 3rem;
+      background-color: var(--bg-color);
+      box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+    }
+  
+  
+  nav h1 {
+    color: var(--primary-color);
+  }
+  
+  nav a {
+    color: var(--primary-color);
+    transition: var(--transition);
+  }
+  nav a:hover {
+    color: var(--secondary-color);
+    border-bottom: var(--secondary-color);
+  }
+  
+  nav ul {
+    display: flex;
+    gap: 1.9rem;
+  }
+  
+  nav ul li {
+    font-weight: var(--bold-font);
+  }
+
+  .form-header{
+    text-align: center;
+    font-size: var(--big-font-size);
+    font-weight: bold;
+  }
+
+  .registerform{
+    padding: 20px;
+    border-radius: 1em;
+    height: 1100px;
+    width: 60%;
+    margin: 0 auto;
+    /*background-color: rgb(93, 93, 150);*/
+  
+  }
+
+  .form_class{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .form_class_label{
+    font-size: var(--medium-font-size);
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: var(--bott0m-margin);
+  }
+
+  .login{
+    padding: 20px;
+    border-radius: 1em;
+    height: 400px;
+    width: 60%;
+    margin: 0 auto;
+    background-color: rgb(184, 41, 36);
+  }
+
+  .forgotPassword{
+    padding: 20px;
+    border-radius: 1em;
+    height: 300px;
+    width: 60%;
+    margin: 0 auto;
+    background-color: rgb(184, 41, 36);
+  }
+
+  .gender, .country, input[type=text], input[type=email], input[type=password], input[type=tel]{
+    width: 100%;
+    padding: 12px 25px;
+    border: 1px solid;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
+  }
+
+  input[type=button]{
+    background-color: rgb(6, 14, 14);
+    color: aliceblue;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+    font-size: var(--medium-font-size);
+    transition: 0.7s;
+
+  }
+
+  .submit:hover{
+    background-color: #ff7235;
+  }
+
+  input::placeholder{
+    color: grey;
+    font-style: italic;
+  }
+
+  input:focus{
+    outline-color: blueviolet;
+    transition: all 0.3;
+  }
+
+  select{
+    padding: 12px 25px;
+    border-radius: 4px;
+    border: 1px solid;
+  }
+  
+@media (max-width: 840px){
+    .form{
+      width: 100%;
+    }
+}
