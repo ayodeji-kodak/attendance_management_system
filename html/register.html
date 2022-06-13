@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <title>Log In</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Please Fill-in Your Details</h1>
+      <form id="registrationForm">
+        <div class="form-control">
+            <input type="text" required>
+            <label>First Name</label>
+        </div>
+        <div class="form-control">
+            <input type="text" required>
+            <label>Last Name</label>
+        </div>
+        <div class="form-control">
+            <input type="text" required>
+            <label>Other Names</label>
+        </div>
+        <div class="form-control">
+            <input 
+            type="text"
+            maxlength="9"
+            id="matricNo"
+             required>
+            <label>Matric Number</label>
+        </div>
+        <div class="form-control">
+          <input type="email" id= "email" required>
+          <label>Email</label>
+          <!-- <label>
+            <span style="transition-delay: 0ms">E</span>
+              <span style="transition-delay: 50ms">m</span>
+              <span style="transition-delay: 100ms">a</span>
+              <span style="transition-delay: 150ms">i</span>
+              <span style="transition-delay: 200ms">l</span>
+        </label> -->
+        </div>
+
+        <div class="form-control">
+            <input type="tel" required>
+            <label>Phone Number</label>
+        </div>
+
+        <div class="form-control">
+          <input type="password" required>
+          <label>Password</label>
+        </div>
+
+        <div class="form-control">
+            <input type="password" required>
+            <label>Confirm Password</label>
+        </div>
+
+        <button class="btn" type="submit">Login</button>
+
+        <p class="text">Already have an account? <a href="/html/login.html">Log In</a> </p>
+      </form>
+    </div>
+    <script src="/script.js"></script>
+  </body>
+</html>
